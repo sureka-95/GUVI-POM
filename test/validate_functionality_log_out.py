@@ -24,7 +24,7 @@ def test_logout_button_functionality(browser):
     dashboard_page = DashboardPage(browser)
 
     # Login with valid credentials
-    login_page.login("surekavj@gmail.com", "Sureka95")
+    login_page.login("valid@gmail.com", "password")
     time.sleep(3)
 
     # Logout
