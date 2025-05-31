@@ -1,0 +1,4 @@
+# create  a requirement list which will need to run the program
+selenium
+pytest
+webdriver-manager
