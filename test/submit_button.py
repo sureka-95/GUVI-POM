@@ -16,8 +16,8 @@ def test_submit_button_works_with_valid_input(browser):
     browser.get("https://v2.zenclass.in/login")
     login_page = LoginPage(browser)
 
-    valid_email = "surekavj@gmail.com"
-    valid_password = "Sureka95"
+    valid_email = "VALIDemail.com"
+    valid_password = "valid password"
 
     login_page.login(valid_email, valid_password)
     time.sleep(3)
