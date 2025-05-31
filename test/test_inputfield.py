@@ -27,16 +27,16 @@ def test_username_password_fields_accept_input(browser):
     assert email_element.is_displayed(), "Email field is not visible"
     assert email_element.is_enabled(), "Email field is not enabled"
     email_element.clear()
-    email_element.send_keys("surekavj@gmail.com")
-    assert email_element.get_attribute("value") == "surekavj@gmail.com", "Email field did not accept input"
+    email_element.send_keys("valid gmail.com")
+    assert email_element.get_attribute("value") == "valid@gmail.com", "Email field did not accept input"
 
     # Password field checks
     password_element = browser.find_element(*login_page.password_input)
     assert password_element.is_displayed(), "Password field is not visible"
     assert password_element.is_enabled(), "Password field is not enabled"
     password_element.clear()
-    password_element.send_keys("Sureka95")
-    assert password_element.get_attribute("value") == "Sureka95", "Password field did not accept input"
+    password_element.send_keys("password")
+    assert password_element.get_attribute("value") == "password", "Password field did not accept input"
 
 # negative test case for input fields
 # define method for it  and pass the  browser argument
