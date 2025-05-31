@@ -20,8 +20,8 @@ def test_login_success(browser):
     login_page = LoginPage(browser)
 
     # Provide valid credentials
-    valid_email = "surekavj@gmail.com"
-    valid_password = "Sureka95"
+    valid_email = "valid@gmail.com"
+    valid_password = "password"
 
     # Perform login
     login_page.login(valid_email, valid_password)
