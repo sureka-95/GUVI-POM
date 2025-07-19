@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Checking out the repo...'
+                git 'https://github.com/sureka-95/GUVI-POM'
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Running build...'
+                echo 'Building project...'
             }
         }
 
@@ -23,7 +23,8 @@ pipeline {
 
     post {
         always {
-            echo 'Build completed.'
+            echo 'Pipeline completed.'
         }
     }
 }
+
