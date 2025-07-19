@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checking out the repo...'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Running build...'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Build completed.'
+        }
+    }
+}
